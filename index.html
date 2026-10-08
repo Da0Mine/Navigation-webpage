@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-page-node-id="9hzkZMsobMTkqMAyErwWh9">
+<html lang="zh-CN" data-page-node-id="9hzkZMsobMTkqMAyErwWh9" style="color-scheme:only light!important;background-color:#F5F5F0!important;color:#0A0A0A!important;filter:none!important">
 <head data-page-node-id="auVwSDEVcB4NNfhUJhCkqJ">
 <meta charset="UTF-8" data-page-node-id="t2AfwIiXieS6bDBTIQDEi1">
+<!-- 固定浅色设计：声明本页不提供暗色主题，防止深色插件 / 浏览器自动深色误伤 -->
+<meta name="color-scheme" content="only light">
+<meta name="darkreader-lock">
+<meta name="theme-color" content="#F5F5F0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="YIqyYQaoGC8xrUflVO5ATr">
 <title>啥都vibe一点</title>
 <meta name="description" content="啥都vibe一点 — 物理沙盒 2.0、粒子海洋、DeepSeek 桌面端、液态玻璃、桌面火柴人、在线自习室、文本粒子化。" data-page-node-id="jsOOtYtOoAjzQzIxH85wU6">
@@ -36,7 +40,17 @@
   --font-mono:'JetBrains Mono','SF Mono',Consolas,monospace;
 
   --container-max:1100px;
+
+  /* 声明只支持浅色：Chromium 自动深色主题的官方 opt-out */
+  color-scheme:only light;
 }
+/* ============================================================
+   防深色插件误伤（Dark Reader / Chrome·Edge 自动深色主题）
+   本页是固定浅色设计，不提供暗色主题。
+   机制分三层，见下方说明 —— 关键兜底必须写在行内样式上，
+   因为深色扩展的样式表总是「后注入」，同优先级/同重要级下
+   后写的规则会赢，写在这里的 !important 压不过它。
+   ============================================================ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
@@ -386,8 +400,8 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 :focus-visible{outline:3px solid var(--nb-pink);outline-offset:3px}
 </style>
 </head>
-<body data-page-node-id="UiYPQaOCJht5V3pBNGy4Go">
-<div class="page noise-bg" data-page-node-id="gsfrpz1QCnUaJiDJPU8BMp">
+<body data-page-node-id="UiYPQaOCJht5V3pBNGy4Go" style="background-color:#F5F5F0!important;color:#0A0A0A!important;filter:none!important">
+<div class="page noise-bg" data-page-node-id="gsfrpz1QCnUaJiDJPU8BMp" style="background-color:#F5F5F0!important">
 
 <!-- ================= 标题 ================= -->
 <main class="main" data-page-node-id="hOUvVMKhPOnA9CDjDBZHp4">
