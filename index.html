@@ -718,8 +718,8 @@ function openProject(id){
   lastFocus = document.activeElement;
   var readmeHTML = p.readme ? renderMD(p.readme) : '<p>该项目暂无 README 说明。</p>';
   var demoBtn = p.demo
-    ? '<a class="btn btn--green" href="' + p.demo + '" target="_blank" rel="noopener">▶ 在线体验</a>'
-    : '<span class="btn btn--secondary dl-card--soon" style="cursor:not-allowed">▶ 在线体验 · 暂无</span>';
+    ? '<a class="btn btn--green" href="' + p.demo + '" target="_blank" rel="noopener">▶ 立即体验</a>'
+    : '<span class="btn btn--secondary dl-card--soon" style="cursor:not-allowed">▶ 立即体验 · 暂无</span>';
   modalBody.innerHTML =
     '<h2 class="modal-title" id="modalTitle">' + p.name + '</h2>' +
     '<div class="modal-sub">' + p.en + ' · ' + p.tag + ' · Da0Mine/' + p.repo + '</div>' +
@@ -732,8 +732,8 @@ function openProject(id){
           ? '<a class="modal-hero__img modal-hero__img--video modal-hero__img--nothumb" href="' + p.video + '" target="_blank" rel="noopener" aria-label="播放演示视频"><span class="modal-hero__play">▶</span><span class="modal-hero__video-label">演示视频</span></a>'
           : '<div class="modal-hero__img" style="background:var(--nb-yellow-bg)"></div>')) +
       '<div class="modal-hero__btns">' +
-        '<a class="btn btn--secondary" href="' + p.github + '" target="_blank" rel="noopener">开源地址 ↗</a>' +
         demoBtn +
+        '<a class="btn btn--secondary" href="' + p.github + '" target="_blank" rel="noopener">开源地址 ↗</a>' +
         '<button class="btn btn--pink" type="button" id="dlOpenBtn">下载 ⬇</button>' +
       '</div>' +
       '<div class="modal-hero__note">下载按钮进入下载菜单：GitHub 源码，或网盘下载（中国移动云盘 / 百度网盘，含各项目子文件夹）</div>' +
